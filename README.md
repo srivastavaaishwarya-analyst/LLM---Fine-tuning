@@ -1,21 +1,22 @@
-# LLM---Fine-tuning
-Fine-tuning a Large Language Model using HuggingFace Transformers on Google Colab.
+# Customer Support Chatbot: Fine-Tuning GPT-2
 
-# LLM Fine-Tuning using HuggingFace
+This project demonstrates fine-tuning the **GPT-2** model on a custom dataset of 200 customer support interactions to create a specialized text generation model.
 
-This project demonstrates fine-tuning a Large Language Model using HuggingFace Transformers in Google Colab.
+## 🚀 Project Overview
+The goal was to adapt a general-purpose language model to understand the specific tone and vocabulary of customer service queries and responses.
 
-## Project Overview
-The goal of this assignment was to fine-tune a pretrained transformer model on a custom dataset and evaluate its performance.
+## 📊 Dataset & Model
+* **Base Model:** `gpt2` (Pre-trained)
+* **Dataset:** `customer_support_dataset_200.csv`
+* **Task:** Causal Language Modeling (Text Generation)
 
-## Technologies Used
-- Python
-- HuggingFace Transformers
-- PyTorch
-- Google Colab
+## 🛠️ Tech Stack
+* **Language:** Python
+* **Libraries:** HuggingFace `transformers`, `datasets`, `accelerate`, `torch`
+* **Infrastructure:** Trained using PyTorch with a focus on GPU efficiency.
 
-## Files
-- `Aishwarya_hw_8.ipynb` – Notebook containing data preprocessing, model fine-tuning, and evaluation.
-
-## Author
-Aishwarya Srivastava
+## 📋 How to Run
+1. Clone the repo: `git clone https://github.com/srivastavaaishwarya-analyst/LLM---Fine-tuning.git`
+2. Install dependencies: `pip install -r requirements.txt`
+3. Ensure the `.csv` file is in the root directory.
+4. Run the training script: `python fine_tune_model.py`
